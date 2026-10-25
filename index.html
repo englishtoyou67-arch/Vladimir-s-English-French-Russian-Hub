@@ -3,25 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Language Games Hub</title>
+  <title>Language Learning Hub</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 12px 0; }
-    a { display: block; padding: 12px 16px; background: #f0f4f8; color: #1a73e8; text-decoration: none; border-radius: 6px; font-weight: bold; border: 1px solid #d2e3fc; }
-    a:hover { background: #e8f0fe; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 680px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #2d3748;
+      background-color: #f7fafc;
+    }
+    .container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    }
+    h1 {
+      color: #1a202c;
+      font-size: 1.8rem;
+      margin: 0 0 8px 0;
+    }
+    p.subtitle {
+      color: #718096;
+      margin: 0 0 28px 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    ul.game-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.game-list li {
+      margin-bottom: 10px;
+    }
+
+    /* Common Button Structure */
+    ul.game-list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid transparent;
+    }
+    ul.game-list a:hover {
+      transform: translateX(4px);
+    }
+
+    /* 🇫🇷 French Color Theme (Soft Blue) */
+    .theme-french h2 { color: #1e40af; border-bottom: 2px solid #dbeafe; padding-bottom: 6px; }
+    .theme-french a { background: #eff6ff; color: #1e40af; border-color: #bfdbfe; }
+    .theme-french a:hover { background: #dbeafe; }
+
+    /* 🇬🇧 English Color Theme (Soft Red/Rose) */
+    .theme-english h2 { color: #9f1239; border-bottom: 2px solid #ffe4e6; padding-bottom: 6px; }
+    .theme-english a { background: #fff1f2; color: #9f1239; border-color: #fecdd3; }
+    .theme-english a:hover { background: #ffe4e6; }
+
+    /* 🇷🇺 Russian Color Theme (Soft Amber/Warm Gold) */
+    .theme-russian h2 { color: #92400e; border-bottom: 2px solid #fef3c7; padding-bottom: 6px; }
+    .theme-russian a { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+    .theme-russian a:hover { background: #fef3c7; }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #edf2f7;
+      font-size: 0.85rem;
+      color: #a0aec0;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>Language Games Hub</h1>
-  <p>Select an exercise to practice:</p>
-  <ul>
-    <li><a href="Francais-coleurs.html">🇫🇷 Français: Les Couleurs</a></li>
-  </ul>
-  <footer>
-    <p>© 2026 Volodymyr Veresaiev. All rights reserved.</p>
-    <p>Educational materials and game mechanics may not be reproduced or redistributed without permission.</p>
-  </footer>
+
+  <div class="container">
+    <h1>Language Learning Hub</h1>
+    <p class="subtitle">Select an exercise to practice vocabulary, grammar, and idioms.</p>
+
+    <!-- FRENCH BLOCK -->
+    <div class="theme-french">
+      <h2>🇫🇷 French / Français</h2>
+      <ul class="game-list">
+        <li>
+          <a href="Francais-coleurs.html">
+            <span>Les Couleurs (Vocabulary Practice)</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ENGLISH BLOCK -->
+    <div class="theme-english">
+      <h2>🇬🇧 English</h2>
+      <ul class="game-list">
+        <li>
+          <a href="English-idioms.html">
+            <span>C1 / C2 Advanced Idioms Challenge</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- RUSSIAN BLOCK -->
+    <div class="theme-russian">
+      <h2>🇷🇺 Russian / Русский язык</h2>
+      <ul class="game-list">
+        <li>
+          <a href="Russian-cases.html">
+            <span>Noun Cases & Prepositions Quest</span>
+            <span>→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2026 Volodymyr Veresaiev. All rights reserved.</p>
+    </footer>
+  </div>
+
 </body>
 </html>
