@@ -75,20 +75,67 @@
     .theme-russian a { background: #fffbeb; color: #92400e; border-color: #fde68a; }
     .theme-russian a:hover { background: #fef3c7; }
 
+    /* Contact Section Styling */
+    .contact-section {
+      margin-top: 36px;
+      padding: 18px 20px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      text-align: center;
+    }
+    .contact-section h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.05rem;
+      color: #2d3748;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: #ffffff;
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .contact-btn:hover {
+      background: #edf2f7;
+      border-color: #a0aec0;
+      color: #1a365d;
+    }
+
+    /* Footer & Copyright */
     footer {
-      margin-top: 40px;
-      padding-top: 20px;
+      margin-top: 30px;
+      padding-top: 18px;
       border-top: 1px solid #edf2f7;
       font-size: 0.85rem;
-      color: #a0aec0;
+      color: #718096;
       text-align: center;
+    }
+    footer p {
+      margin: 4px 0;
+    }
+    footer .copyright {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Vladimir's Language Learning Hub</h1>
+    <h1>Vladimir's Language Games Hub</h1>
     <p class="subtitle">Select a file to practice vocabulary, grammar, and idioms.</p>
 
     <!-- FRENCH BLOCK -->
@@ -130,10 +177,26 @@
       </ul>
     </div>
 
- <footer>
-  <p><strong>© 2026 Volodymyr Veresaiev. All rights reserved.</strong></p>
-  <p>Educational materials and game mechanics may not be reproduced without written permission.</p>
-</footer>
+    <!-- CONTACT ME SECTION -->
+    <div class="contact-section">
+      <h3>Contact Me</h3>
+      <div class="contact-links">
+        <!-- Replace YOUR_LinkedIn_USERNAME with your profile handle -->
+        <a href="www.linkedin.com/in/volodymyr-veresaiev-2b7981273" target="_blank" rel="noopener noreferrer" class="contact-btn">
+          📷 LinkedIn
+        </a>
+        <!-- Replace your-email@example.com with your email address -->
+        <a href="mailto:englishtoyou67@gmail.com?subject=Language%20Hub%20Inquiry" class="contact-btn">
+          ✉️ Send Email
+        </a>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT FOOTER -->
+    <footer>
+      <p class="copyright">© 2026 Volodymyr Veresaiev. All rights reserved.</p>
+      <p>Educational materials and game mechanics may not be reproduced without written permission.</p>
+    </footer>
   </div>
 
 </body>
